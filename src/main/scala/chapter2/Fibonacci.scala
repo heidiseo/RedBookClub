@@ -11,6 +11,4 @@ object Fibonacci {
     }
     loop(b, 1, 0)
   }
-
-  // }
 }

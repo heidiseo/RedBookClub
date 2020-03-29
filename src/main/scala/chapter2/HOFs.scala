@@ -26,4 +26,74 @@ object HOFs {
     a: A => f(g(a))
   }
 
+
+  def curry1[A,B,C](f:(A,B) => C): A => (B => C) = a => b => f(a,b)
+
+  def uncurry1[A,B,C](f: A => B => C): (A, B) => C = (a: A, b: B) => f(a)(b)
+
+  def compose1[A,B,C](f: B => C, g: A => B): A => C = {
+    a: A => f(g(a))
+  }
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
